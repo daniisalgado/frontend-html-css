@@ -51,7 +51,7 @@ Neste espaço você encontrará:
 <a href="https://github.com/daniisalgado" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&color=ffb7b2" alt="Github Badge"/>
 </a>
-<a href="https://www.linkedin.com/in/SEU-LINKEDIN" target="_blank">
+<a href="https://www.linkedin.com/in/daniela-salgado-5653b618a/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=ff9cee" alt="LinkedIn Badge"/>
 </a>
 
