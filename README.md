@@ -54,7 +54,3 @@ Neste espaço você encontrará:
 <a href="https://www.linkedin.com/in/daniela-salgado-5653b618a/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=ff9cee" alt="LinkedIn Badge"/>
 </a>
-
-<p align="center">Feito com 💖 por <a href="https://github.com/daniisalgado">daniisalgado</a></p>
-
-</div>
