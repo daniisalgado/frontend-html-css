@@ -862,6 +862,25 @@
     </ol>
 </div>
 
+<h2>Imagens Dinâmicas (&lt;picture&gt;)</h2>
+
+<p>A tag <code>&lt;picture&gt;</code> permite entregar a imagem perfeita para cada tamanho de tela. Não é apenas esticar ou encolher a foto (o CSS faz isso), mas sim <strong>carregar arquivos diferentes</strong> para economizar dados do usuário.</p>
+
+<div style="background-color: #E8D1A7; border-left: 5px solid #84592B; padding: 15px; margin: 20px 0;">
+    <h3>💡 O Impacto na Performance</h3>
+    <p>Uma imagem ajustada corretamente melhora a experiência do usuário (o site carrega rápido no celular) e diminui a <strong>Taxa de Rejeição</strong> (o usuário não desiste de esperar).</p>
+</div>
+
+<p><strong>Teste agora:</strong> Redimensione a janela do seu navegador e veja a imagem "trocar" de arquivo automaticamente.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    
+    <img src="imagens/foto-g.png" alt="Imagem Flexível">
+</picture>
+
 
 
 
