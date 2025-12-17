@@ -881,6 +881,86 @@
     <img src="imagens/foto-g.png" alt="Imagem Flexível">
 </picture>
 
+   <h2>Sintonizando: Reproduzindo Áudio</h2>
+
+<p>Adicionar som ao site é incrível, mas exige responsabilidade. Antes do play, confira estas regras de ouro:</p>
+
+<div style="background-color: #fff3cd; border: 1px solid #ffeeba; padding: 15px; border-radius: 5px; color: #856404;">
+    <h3>⚠ Cuidados Essenciais</h3>
+    <ul>
+        <li><strong>Direitos Autorais:</strong> Nunca use músicas famosas sem permissão. No <em>YouTube Studio</em>, busque pela "Biblioteca de Áudio" e filtre por "Atribuição não necessária" para achar sons gratuitos e legais.</li>
+        <li><strong>Peso do Arquivo:</strong> Áudios pesados consomem os dados do usuário. Prefira arquivos compactados (MP3 ou OGG) em vez de arquivos brutos (WAV).</li>
+    </ul>
+</div>
+
+<hr>
+
+<h3>1. Os Formatos de Arquivo</h3>
+<p>Por que usamos extensões diferentes? Cada uma tem um propósito:</p>
+
+<ul>
+    <li><strong>MP3 (MPEG-3):</strong> O padrão universal. É leve e toca em todos os navegadores e dispositivos. <em>(Use sempre como opção principal).</em></li>
+    
+    <li><strong>WAV (Waveform):</strong> Qualidade de estúdio, sem compressão. O áudio é perfeito, mas o arquivo é <strong>gigante</strong>. <em>(Evite usar na web, a menos que seja um site para audiófilos).</em></li>
+    
+    <li><strong>OGG (Ogg Vorbis):</strong> Formato livre e gratuito (Open Source). Geralmente tem qualidade melhor que o MP3 com o mesmo tamanho, mas não toca no navegador Safari (Apple) em versões antigas.</li>
+</ul>
+
+<hr>
+
+<h3>2. O Player Completo</h3>
+<p>Aqui está o código profissional que garante que o áudio toque em qualquer lugar:</p>
+
+<audio preload="metadata" controls loop>
+    <source src="midia/danicast-14.mp3" type="audio/mpeg">
+    
+    <source src="midia/danicast-14.wav" type="audio/wav">
+    
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. 
+       <a href="midia/danicast-14.mp3" download>Clique aqui para baixar o MP3</a>.
+    </p>
+</audio>
+
+<h2>Configurando o Player (&lt;audio&gt;)</h2>
+<p>Não basta apenas colocar o arquivo de som; precisamos dizer ao navegador como ele deve ser entregue ao usuário. Para isso, usamos atributos especiais dentro da tag:</p>
+
+<hr>
+
+<h3>1. Controls (O Controle Remoto)</h3>
+<p><strong>O que faz:</strong> Faz aparecer os botões de Play, Pause, Volume e a barra de progresso.</p>
+<p><strong>Por que usar?</strong> Sem este atributo, o áudio é carregado "invisível" na página. A menos que você queira um som ambiente escondido (o que geralmente irrita o usuário), o <code>controls</code> é obrigatório para que a pessoa possa interagir.</p>
+
+<hr>
+
+<h3>2. Loop (O Ciclo Infinito)</h3>
+<p><strong>O que faz:</strong> Faz o áudio reiniciar automaticamente assim que termina.</p>
+<p><strong>Por que usar?</strong> É perfeito para músicas de fundo curtas, sons de chuva ou ruído branco, onde você não quer que o som pare nunca.</p>
+
+<hr>
+
+<h3>3. Preload (O Carregamento Inteligente)</h3>
+<p>Este é o atributo mais técnico e importante para a performance do seu site. Ele diz ao navegador <strong>o quanto</strong> do arquivo ele deve baixar antes mesmo do usuário clicar no Play.</p>
+
+<p>O <code>preload</code> aceita três ordens diferentes:</p>
+
+<h4>A. <code>preload="metadata"</code> (O Recomendado)</h4>
+<p>O navegador baixa apenas as "informações básicas" do arquivo (duração total, nome, artista). Ele <strong>não</strong> baixa o som em si.</p>
+<ul>
+    <li><strong>Vantagem:</strong> O site carrega muito rápido e não gasta a internet do usuário à toa. O áudio só começa a baixar quando ele clica no Play.</li>
+</ul>
+
+<h4>B. <code>preload="auto"</code></h4>
+<p>O navegador tenta baixar o arquivo de áudio inteiro assim que a página abre.</p>
+<ul>
+    <li><strong>Risco:</strong> Se o usuário entrar na página e sair sem ouvir nada, você gastou a internet dele (dados móveis) e sobrecarregou o servidor sem necessidade.</li>
+</ul>
+
+<h4>C. <code>preload="none"</code></h4>
+<p>O navegador ignora o arquivo totalmente. Não sabe nem a duração.</p>
+<ul>
+    <li><strong>Uso:</strong> Para economizar o máximo possível, mas o player pode parecer "travado" ou demorar para mostrar o tempo total da música.</li>
+</ul>
+
 
 
 
