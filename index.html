@@ -961,6 +961,129 @@
     <li><strong>Uso:</strong> Para economizar o máximo possível, mas o player pode parecer "travado" ou demorar para mostrar o tempo total da música.</li>
 </ul>
 
+<h2>Luz, Câmera, Ação: Vídeos na Web</h2>
+
+<h3>1. Hospedagem Local (Direto do Servidor)</h3>
+<p>Aqui o vídeo mora dentro da pasta do seu site. Você tem controle total, mas consome a banda do seu servidor.</p>
+
+<h4>Cuidados com Peso e Qualidade</h4>
+<div style="background-color: #F5C74D; color: #8894B7; padding: 20px; border: 5px solid #DDC5A9;">
+    <p>Vídeos pesados deixam o site lento. Recomendações:</p>
+</div>
+
+<ul>
+    <li><strong>HandBrake:</strong> Ferramenta para compactar vídeos sem perder qualidade.</li>
+    <li><strong>Pexels:</strong> Banco de vídeos gratuitos.</li>
+</ul>
+
+<h3>Formatos de Arquivo</h3>
+<p>Para garantir que funcione em todos os navegadores, ofereça mais de uma opção:</p>
+<ul>
+    <li><strong>MP4:</strong> O padrão universal.</li>
+    <li><strong>WebM:</strong> Formato do Google, leve e moderno.</li>
+    <li><strong>OGV:</strong> Formato mais antigo (backup).</li>
+</ul>
+
+<h3>O Código do Player</h3>
+<p>Dica: Use o atributo <code>poster</code> para definir uma imagem de capa.</p>
+
+<video width="360" poster="capa-video.jpg" controls loop>
+    <source src="midia/meu-video.mp4" type="video/mp4">
+    
+    <source src="midia/meu-video.webm" type="video/webm">
+    
+    <source src="midia/meu-video.ogv" type="video/ogg">
+    
+    <p>Seu navegador não suporta vídeo HTML5. <a href="midia/meu-video.mp4">Baixe o vídeo aqui</a>.</p>
+</video>
+
+<hr>
+
+<h2>2. Hospedagem Externa</h2>
+<p>Ideal para economizar espaço e ganhar visibilidade.</p>
+
+<h3>YouTube</h3>
+<p>Vantagem: Melhora o SEO (buscas no Google).</p>
+
+<iframe width="360" height="315" 
+    src="https://www.youtube.com/embed/eFQoo6p-4Q" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+<h3>Vimeo</h3>
+<p>Vantagem: Player mais limpo e foco artístico. Desvantagem: Limites de upload na conta grátis.</p>
+
+<iframe src="https://player.vimeo.com/video/197093965?color=ff9933&portrait=0" 
+    width="360" height="315" 
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+   <h1>Os Detalhes e o Vimeo</h1>
+
+<h2>1. As Pequenas Coisas (Atributos do Vídeo)</h2>
+<p>No código <code>&lt;video&gt;</code>, cada palavra extra que colocamos funciona como uma instrução específica para o navegador. Vamos decifrar o que cada uma faz:</p>
+
+<div style="background-color: #6B212C; color: #8EA1AE; padding: 20px; border: 5px solid #DCE0EB;">
+<ul>
+    <li>
+        <strong>poster="imagem.jpg"</strong><br>
+        É a "capa" do vídeo. Sem isso, o player fica preto ou mostra o primeiro frame (que muitas vezes é uma tela escura) até o usuário dar play. O poster garante que o vídeo pareça bonito mesmo parado.
+    </li>
+
+    <li>
+        <strong>controls</strong><br>
+        É o "controle remoto". Ele faz aparecer a barra de tempo, o volume e o botão de tela cheia. Se você esquecer de colocar isso, o vídeo fica invisível e intocável.
+    </li>
+
+    <li>
+        <strong>width="500"</strong><br>
+        Define a largura do player na tela. O navegador calcula a altura automaticamente para não distorcer a imagem.
+    </li>
+
+    <li>
+        <strong>loop</strong><br>
+        Faz o vídeo recomeçar automaticamente quando termina. Ótimo para vídeos curtos de paisagem ou texturas, mas pode irritar em vídeos longos com fala.
+    </li>
+
+    <li>
+        <strong>autoplay</strong> (Cuidado!)<br>
+        Tenta iniciar o vídeo sozinho. <br>
+        <em>Regra Secreta:</em> A maioria dos navegadores bloqueia o autoplay se o vídeo tiver som. Para funcionar, você geralmente precisa adicionar o atributo <code>muted</code> (mudo) junto.
+    </li>
+</ul>
+</div>
+
+<hr>
+
+<h2>2. Entendendo o Vimeo</h2>
+<p>Se o YouTube é a "TV Aberta" (muita gente, muita propaganda, algoritmo frenético), o Vimeo é o "Cinema Cult" ou a "Galeria de Arte".</p>
+
+<h3>Por que escolher o Vimeo?</h3>
+<p>Ele é a plataforma favorita de cineastas, designers e agências de publicidade por três motivos:</p>
+
+<ol>
+    <li><strong>A Estética (O Player Limpo):</strong> O player do Vimeo é minimalista e elegante. Ele não tem aquele monte de botões e propagandas piscando na tela como o YouTube.</li>
+    
+    <li><strong>A Qualidade de Imagem:</strong> A compressão de vídeo do Vimeo é menos agressiva. As cores ficam mais fiéis e a imagem menos "pixelada".</li>
+    
+    <li><strong>Sem Distrações:</strong> Ao final do vídeo, ele não tenta empurrar vídeos de gatinhos ou fofocas para o seu usuário. Ele mantém o foco no seu conteúdo.</li>
+</ol>
+
+<h3>Os "Códigos" na URL do Vimeo</h3>
+<p>No seu exemplo, o link tinha algo especial: <code>?color=ff9933&portrait=0</code>. O Vimeo permite personalizar o player direto pelo link:</p>
+
+<ul>
+    <li><strong>color=ff9933:</strong> Você está dizendo: "Quero que os botões do player sejam laranjas (código da cor)". Isso permite deixar o vídeo com a cor da sua marca.</li>
+    <li><strong>portrait=0:</strong> Remove a foto do perfil do dono do canal, deixando o visual mais limpo.</li>
+</ul>
+
+<h3>O Lado "Ruim" (Limitações)</h3>
+<p>Diferente do YouTube, que aceita tudo de graça, o Vimeo tem um limite rigoroso para contas gratuitas (geralmente 500MB por semana). Se você produz muito conteúdo, precisará pagar uma assinatura (Plano Pro ou Plus).</p>
 
 
 
