@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+    <meta name="author" content="Daniela Salgado">
+    <title>YouTube</title>
+</head>
+<body>
+  
+   <h1>Vídeos Gustavo Guanabara</h1>
+<h2>Aqui estão os vídeos de apredizado em HTML</h2>
+
+<iframe width="100%" height="200" 
+    src="https://www.youtube.com/embed/LeLnlT-ZKw8" 
+    title="Links Internos" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<br><br>
+
+<iframe width="100%" height="200" 
+    src="https://www.youtube.com/embed/3hng-hmSv2Y" 
+    title="Incorporação de vídeos externos" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<br><br>
+
+<iframe width="100%" height="200" 
+    src="https://www.youtube.com/embed/Jszz7M676y8" 
+    title="Links para download" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<br><br>
+
+<iframe width="100%" height="200" 
+    src="https://www.youtube.com/embed/cAgkwPWE4hU" 
+    title="Imagens que se adaptam sozinhas" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<hr> <h3>Entendendo o Código do Vídeo:</h3>
+<p>Abaixo, a explicação dos atributos técnicos usados na tag <code>&lt;iframe&gt;</code>:</p>
+
+<div style="background: #c69fd5; color: #fdfdc9; padding: 20px; border: 5px solid #CBD83B;">
+
+<ul>
+    <li>
+        <strong>title="..."</strong>: 
+        <b>Serve para <em>Acessibilidade</em>. Descreve o conteúdo do quadro para leitores de tela usados por pessoas com deficiência visual.</b>
+    </li>
+    
+    <br>
+
+    <li>
+        <strong>frameborder="0"</strong>: 
+        <b>Remove a borda cinza padrão do navegador, deixando o visual mais limpo.</b>
+    </li>
+
+    <br>
+
+    <li>
+        <strong>allow="..."</strong>: 
+        <mark></i>Lista de permissões de segurança que damos ao YouTube:</mark>
+        <ul>
+          <b>
+            <li><em>accelerometer</em> e <em>gyroscope</em>: Permite usar os sensores de movimento do celular (útil para vídeos em 360°/VR).</li>
+            <li><em>clipboard-write</em>: Permite que o botão "Copiar Link" do player funcione.</li>
+            <li><em>encrypted-media</em>: Permite reproduzir vídeos protegidos por direitos autorais.</li>
+            <li><em>picture-in-picture</em>: Permite que o vídeo flutue na tela enquanto você navega por outras abas.</li>
+            </b>
+        </ul>
+    </li>
+</ul>
+</div>
+
+
+</body>
+</html>
