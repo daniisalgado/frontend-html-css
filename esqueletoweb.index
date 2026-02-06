@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "pt-br"
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="device-width,initial-scale=1.0">
+   <link rel="shortcut icon" href="cupcake.ico" type="image/x-icon">
+   <meta name="author" content="Daniela Salgado">
+   <meta name="description" content="Estudos em HTML.">
+   <meta name="keywords" content="html, portfolio, tecnologia, desenvolvimento">
+
+  <title>Estudos da Dani/HTML,CSS,JS</title>
+
+</head>
+
+<body>
+<h1>HTML5: A Espinha Dorsal da Web</h1>
+<p>
+    O HTML (HyperText Markup Language) é o bloco de construção fundamental de qualquer site. 
+    Ele não é uma linguagem de programação, mas sim uma <strong>linguagem de marcação</strong> responsável pela estrutura e semântica do conteúdo. 
+    É através dele que dizemos ao navegador o que é um título, um parágrafo, uma imagem ou um botão, transformando linhas de código na interface visual que acessamos todos os dias.
+</p>
+
+  <h2>Materiais de Apoio e Referências</h2>
+    <p>Para acompanhar o curso de HTML5 e CSS3, utilizamos tanto materiais oficiais gratuitos quanto bibliografias externas para aprofundamento.</p>
+
+   <h3>1. Referências Online (Documentação)</h3>
+     <p>Para consultas técnicas rápidas e confiáveis, utilize as seguintes fontes:</p>
+    <ul>
+    <li><strong>MDN (Mozilla Developer Network):</strong> Considerada o "manual" do desenvolvedor, com explicações detalhadas em português.</li>
+    <li><strong>W3C:</strong> A organização oficial que define os padrões da Web.</li>
+    <li><strong>W3Schools:</strong> Site popular com tutoriais práticos e exemplos rápidos.</li>
+    </ul>
+
+   <h3>2. Livros Recomendados</h3>
+     <p>A compra de livros <strong>não é obrigatória</strong>, mas são ótimos para quem deseja se aprofundar ou ter uma referência física.</p>
+
+  <p><strong>Didáticos e Visuais:</strong></p>
+    <ul>
+    <li><em>HTML e CSS</em> de <strong>Jon Duckett</strong>: Destaca-se pelo design impecável e alta qualidade visual.</li>
+    <li><em>Use a Cabeça (Head First)</em>: Linguagem simples e divertida.</li>
+    <li><em>Crie seu próprio site</em>: Ensina através de uma história em quadrinhos (ótimo para jovens).</li>
+    </ul>
+
+   <p><strong>Autores Brasileiros:</strong></p>
+   <ul>
+    <li>Livros do <strong>Maujor</strong> (Maurício Samy Silva): Conhecido como o "dinossauro das CSS", é a maior referência nacional.</li>
+   </ul>
+
+<p><strong>Técnicos e Teóricos:</strong></p>
+   <ul>
+    <li>Série <em>O'Reilly</em> (Guia Definitivo): Para aprofundamento técnico avançado.</li>
+    <li><em>Psicologia das Cores</em> (Eva Heller) e <em>Pensar com Tipos</em> (Ellen Lupton): Essenciais para estudar Design além do código.</li>
+   </ul>
+
+  <h2>Módulo 1: Primeiros Passos</h2>
+    <p>Este módulo abrange os capítulos 1 ao 12. Ele foi desenhado para criar uma base teórica e prática sólida antes de avançarmos para técnicas mais complexas.</p>
+
+  <h3>1. Fundamentos da Web e Ambiente</h3>
+    <p>Antes de digitar códigos, é preciso entender a infraestrutura. Estudaremos como a Internet funciona, a diferença entre Front-end e Back-end, e configuraremos as ferramentas essenciais: <strong>Visual Studio Code</strong> e <strong>Google Chrome</strong>.</p>
+
+  <h3>2. HTML5: Estrutura e Semântica</h3>
+    <p>Este é o coração do módulo. O foco não é apenas fazer funcionar, mas dar significado (semântica) ao conteúdo:</p>
+  <ul>
+    <li>Estrutura básica de documentos e hierarquia de títulos;</li>
+    <li>Uso de textos, símbolos especiais e emojis;</li>
+    <li>Criação de Links (âncoras), a parte mais importante da Web.</li>
+  </ul>
+
+  <h3>3. Multimídia</h3>
+    <p>Aprenderemos a enriquecer o site inserindo imagens flexíveis, áudios e vídeos. Discutiremos também quando hospedar o vídeo no próprio site ou usar serviços como o YouTube.</p>
+
+  <h3>4. Introdução ao CSS3</h3>
+     <p>Teremos o primeiro contato com o Design, aprendendo a aplicar estilos básicos na própria linha do código (Inline).</p>
+
+<hr>
+
+  <h3>A Analogia da Construção</h3>
+    <p>Para entender a diferença entre as tecnologias, imagine a construção de uma casa:</p>
+    <p><strong>HTML (Alvenaria):</strong> É a estrutura pura. São as paredes, vigas e o teto.</p>
+    <p><strong>CSS (Decoração):</strong> É o acabamento. A pintura, as cores e o estilo visual.</p>
+    <p><strong>JavaScript (Elétrica/Hidráulica):</strong> É a funcionalidade. O que faz as coisas acenderem, se mexerem e funcionarem.</p>
