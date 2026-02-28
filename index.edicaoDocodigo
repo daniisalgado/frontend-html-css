@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang = "pt-br"
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="device-width,initial-scale=1.0">
+   <link rel="shortcut icon" href="cupcake.ico" type="image/x-icon">
+   <meta name="author" content="Daniela Salgado">
+   <meta name="description" content="Estudos em HTML.">
+   <meta name="keywords" content="html, portfolio, tecnologia, desenvolvimento">
+
+  <title>Estudos da Dani/HTML,CSS,JS</title>
+  
+</head>
+
+<body>
+
+<h1>EXTRA! EXTRA! Edição do Código</h1>
+<hr>
+<p>Nossa redação explica como organizar seu site igual a um jornal:</p>
+
+<h1>A Manchete da Capa (H1)</h1>
+<p>É o título mais importante de todos. Regra de ouro: Só pode existir <strong>uma</strong> manchete principal por página.</p>
+
+<h2>Os Cadernos (H2)</h2>
+<p>São as seções grandes do jornal, como "Esportes" ou "Cultura". Servem para separar os assuntos.</p>
+
+<h3>A Notícia do Dia (H3)</h3>
+<p>É o título da matéria dentro da seção. É um destaque menor, mas ainda importante.</p>
+
+<h4>Os Detalhes (H4 ao H6)</h4>
+<p>São usados para subtítulos pequenos, legendas de fotos ou notas de rodapé.</p>
+
+<img src="jornal.png" alt="Imagem do Jornal">
+
+<h2>O Significado de Semântica</h2>
+
+<p>No HTML5, Semântica significa dar <strong>sentido</strong> ao código, e não apenas mudar a aparência.</p>
+
+<p>Imagine que o site é uma mudança de casa. Antigamente, colocávamos tudo em caixas marrons sem nome (as tags <code>&lt;div&gt;</code>). Ninguém sabia o que tinha dentro.</p>
+
+<p>Com a Semântica, passamos a etiquetar as caixas corretamente:</p>
+
+<p><strong>&lt;header&gt;:</strong> O navegador sabe que aqui é o Cabeçalho.</p>
+<p><strong>&lt;nav&gt;:</strong> O navegador entende que aqui tem um Menu de Navegação.</p>
+<p><strong>&lt;footer&gt;:</strong> O navegador identifica que é o Rodapé.</p>
+
+<p>Escrever código semântico ajuda o Google a ler seu site melhor e permite que cegos (usando leitores de tela) compreendam a estrutura da página.</p>
+
+<h2>Cuidado: Tags Obsoletas</h2>
+
+<p>Com a chegada do HTML5, muitas tags antigas foram "aposentadas" (depreciadas). O motivo é simples: o HTML deve cuidar apenas do significado, enquanto o visual é responsabilidade exclusiva do CSS.</p>
+
+<h3>O "Cemitério" das Tags</h3>
+<p>Evite usar estes comandos antigos, pois os navegadores modernos podem parar de aceitá-los a qualquer momento:</p>
+
+<ul>
+    <li><strong>&lt;center&gt;:</strong> Antigamente usava-se para centralizar textos. Hoje, isso é um erro. O correto é usar CSS (<code>text-align: center</code>).</li>
+    
+    <li><strong>&lt;font&gt;:</strong> Usada para mudar cor e tamanho da letra. Hoje, usar isso é considerado uma má prática. Cor e fonte são ajustes visuais, logo, são tarefas do CSS.</li>
+    
+    <li><strong>&lt;strike&gt;:</strong> Usada para riscar texto. Se o objetivo é visual, use CSS. Se o objetivo é dizer "texto excluído", use a tag semântica correta: <code>&lt;del&gt;</code>.</li>
+    
+    <li><strong>&lt;marquee&gt;:</strong> Aquele letreiro que ficava passando na tela. Hoje é considerado visualmente poluído e deve ser evitado (ou feito via animação CSS).</li>
+</ul>
+
+<hr>
+
+<p><strong>Regra de Ouro:</strong> Se a tag serve apenas para deixar o site "bonito" (mudar cor, posição, tamanho), ela provavelmente está errada no HTML. Deixe o HTML para a estrutura e o CSS para a beleza.</p>
+
+<h2>Guia Completo de Formatações</h2>
+
+<h3>1. Peso e Ênfase</h3>
+<p>Tags que alteram o destaque da fonte.</p>
+
+<p><strong>&lt;b&gt; (Bold):</strong> Deixa em negrito apenas visualmente (sem importância).</p>
+<p><strong>&lt;strong&gt; (Forte):</strong> Deixa em negrito indicando <strong>importância semântica</strong>.</p>
+<p><strong>&lt;i&gt; (Italic):</strong> Deixa itálico visualmente (usado para termos estrangeiros).</p>
+<p><strong>&lt;em&gt; (Emphasis):</strong> Deixa itálico indicando <em>ênfase na fala</em>.</p>
+
+<hr>
+
+<h3>2. Tamanho e Marcação</h3>
+<p>Tags usadas para destacar trechos ou definir "letras miúdas".</p>
+
+<p><strong>&lt;mark&gt; (Marcado):</strong> Funciona como um <mark>marca-texto amarelo</mark>. Usado para destacar relevância em um trecho.</p>
+<h3>Personalizando a Cor (&lt;mark&gt;)</h3>
+
+<p>Por padrão, o navegador pinta o destaque de amarelo. Mas você pode trocar a "tinta" do seu marca-texto usando o atributo <code>style</code> (estilo).</p>
+
+<p>Veja os exemplos:</p>
+
+<ul>
+    <li>
+        <mark style="background-color: pink;">Destaque em Rosa</mark> 
+        <br>
+        (Usamos: <code>style="background-color: pink;"</code>)
+    </li>
+    
+    <br>
+
+    <li>
+        <mark style="background-color: lightblue;">Destaque em Azul Claro</mark> 
+        <br>
+        (Usamos: <code>style="background-color: lightblue;"</code>)
+    </li>
+
+    <br>
+
+    <li>
+        <mark style="background-color: #77ffc0;">Destaque com Código Hexadecimal</mark> 
+        <br>
+        (Você pode usar códigos de cores específicos, como <code>#77ffc0</code>)
+    </li>
+</ul>
+
+<p><strong>&lt;small&gt; (Pequeno):</strong> Diminui o tamanho da fonte. Semanticamente, representa <small>letras miúdas, avisos legais ou direitos autorais</small>.</p>
+
+<hr>
+
+<h3>3. Edição de Texto (Riscado e Sublinhado)</h3>
+<p>Muito usado em blogs para mostrar atualizações em postagens antigas.</p>
+
+<p><strong>&lt;del&gt; (Deleted):</strong> Cria um texto <del>riscado</del>. Indica que aquela informação foi removida ou não vale mais.</p>
+<p><strong>&lt;ins&gt; (Inserted):</strong> Cria um texto <ins>sublinhado</ins>. Indica que aquela informação foi adicionada recentemente.</p>
+<p><strong>&lt;s&gt; e &lt;u&gt;:</strong> São as versões visuais antigas (Strikethrough e Underline). Evite usar, prefira <code>&lt;del&gt;</code> e <code>&lt;ins&gt;</code> ou CSS.</p>
+
+<hr>
+
+<h3>4. Posição (Ciência e Matemática)</h3>
+<p>Usados para deslocar o texto para cima ou para baixo.</p>
+
+<p><strong>&lt;sup&gt; (Superscript):</strong> Texto sobrescrito. Exemplo: 2<sup>2</sup> (ao quadrado) ou 10<sup>a</sup> posição.</p>
+<p><strong>&lt;sub&gt; (Subscript):</strong> Texto subscrito. Exemplo: H<sub>2</sub>O (fórmulas químicas).</p>
+
+<hr>
+
+<h3>5. Citações e Códigos</h3>
+<p>Maneiras de formatar falas e termos técnicos.</p>
+
+<p><strong>&lt;code&gt; (Código):</strong> Define um trecho de código de computador. Usa uma fonte monoespaçada (tipo máquina de escrever).</p>
+<p><em>Exemplo:</em> O comando <code>document.getElementById()</code> é usado em JavaScript.</p>
+
+<br>
+
+<p><strong>&lt;pre&gt; (Pré-formatado):</strong> Ele respeita todos os espaços e quebras de linha que você der no código (ótimo para poesias ou códigos longos).</p>
+<pre>
+    Nesta tag
+        os espaços
+            são preservados.
+</pre>
+
+<br>
+
+<p><strong>&lt;blockquote&gt; (Citação em Bloco):</strong> Citação longa. Geralmente o navegador cria um recuo (margem) automático na esquerda.</p>
+<blockquote>
+    "O computador nasceu para resolver problemas que antes não existiam."
+</blockquote>
+
+<br>
+
+<p><strong>&lt;q&gt; (Quote):</strong> Citação curta no meio de uma frase. O navegador coloca aspas automaticamente em volta do texto.</p>
+<p>Como disse o professor: <q>Estudem programação todos os dias!</q></p>
+
+<br>
+
+<p><strong>&lt;abbr&gt; (Abreviação):</strong> Ao passar o mouse em cima, ele mostra o significado completo.</p>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> no momento. (Passe o mouse sobre as siglas).</p>
+
+</head>
+</html>
