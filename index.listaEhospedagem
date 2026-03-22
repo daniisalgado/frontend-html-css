@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang = "pt-br"
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="device-width,initial-scale=1.0">
+   <link rel="shortcut icon" href="cupcake.ico" type="image/x-icon">
+   <meta name="author" content="Daniela Salgado">
+   <meta name="description" content="Estudos em HTML.">
+   <meta name="keywords" content="html, portfolio, tecnologia, desenvolvimento">
+
+  <title>Estudos da Dani/HTML,CSS,JS</title>
+  
+</head>
+
+<body>
+    
+
+<h1>Listas Avançadas: O Guia de Skin Care</h1>
+
+<h2>1. Listas Mistas (Aninhamento)</h2>
+<p>Aqui combinamos a lógica de passos obrigatórios (Lista Ordenada) com opções de produtos (Lista Não Ordenada).</p>
+
+<div style="background-color: #fff0f5; padding: 20px; border-radius: 10px; border: 1px solid pink;">
+    <h3>Minha Rotina Matinal</h3>
+    
+    <ol>
+        <li><strong>Limpeza</strong> (Primeiro passo essencial)
+            <ul>
+                <li>Gel de Limpeza Profunda</li>
+                <li>Água Micelar</li>
+            </ul>
+        </li>
+        
+        <li><strong>Tratamento</strong> (Escolha conforme a necessidade)
+            <ul>
+                <li>Sérum de Vitamina C (Para manchas)</li>
+                <li>Sérum de Ácido Hialurônico (Para hidratação)</li>
+            </ul>
+        </li>
+        
+        <li><strong>Proteção Solar</strong> (Nunca pular este passo!)
+            <ul>
+                <li>Protetor Toque Seco FPS 60</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<p><em>Note a estrutura: A lista de bolinhas (<code>&lt;ul&gt;</code>) deve ficar DENTRO da tag do item (<code>&lt;li&gt;</code>) principal.</em></p>
+
+<hr>
+
+<h2>Lista de Definição (&lt;dl&gt;)</h2>
+
+<p>Diferente das listas anteriores que apenas enumeram itens, a Lista de Definição cria uma <strong>relação</strong> entre duas coisas: um termo e o seu significado.</p>
+
+<p>Imagine um dicionário: você tem a palavra em destaque (o Termo) e logo abaixo a explicação do que ela significa (a Definição).</p>
+
+<h2>A Estrutura das Tags</h2>
+<p>Para montar essa lista, precisamos de três tags trabalhando juntas:</p>
+<ul>
+    <li><strong>&lt;dl&gt; (Definition List):</strong> É a caixa que envolve toda a lista.</li>
+    <li><strong>&lt;dt&gt; (Definition Term):</strong> É o título ou o termo que será explicado.</li>
+    <li><strong>&lt;dd&gt; (Definition Description):</strong> É a descrição ou o significado daquele termo.</li>
+</ul>
+
+<hr>
+
+<h3>Exemplo Prático: Glossário de Ingredientes</h3>
+<p>Veja como essa estrutura fica perfeita para explicar os ativos dos seus produtos de pele:</p>
+
+<dl>
+    <dt><strong>Ácido Hialurônico</strong></dt>
+    <dd>Uma molécula "esponja" que retém água, mantendo a pele hidratada e preenchida.</dd>
+
+    <dt><strong>Vitamina C</strong></dt>
+    <dd>Poderoso antioxidante que combate radicais livres e ajuda a clarear manchas.</dd>
+
+    <dt><strong>Retinol</strong></dt>
+    <dd>O "padrão ouro" do anti-idade. Estimula a renovação celular e a produção de colágeno.</dd>
+</dl>
+
+<hr>
+
+<p><em>Dica Visual: Note que o navegador automaticamente dá um recuo (margem) na descrição (&lt;dd&gt;), deixando o termo (&lt;dt&gt;) em destaque na linha de cima.</em></p>
+
+<h2>Trabalhando com Links</h2>
+<p>O elemento <code>&lt;a&gt;</code> (Anchor/Âncora) é a essência da web. É ele que conecta documentos.</p>
+
+<hr>
+
+<h3>1. Links Externos</h3>
+<p>São aqueles que levam o usuário para <strong>fora</strong> do seu site (para outra "casa").</p>
+<p><em>Regra de Etiqueta:</em> Ao enviar o usuário para fora, usamos <code>target="_blank"</code> para abrir em uma nova aba, assim ele não perde o seu site de vista.</p>
+
+<ul>
+    <li>
+        Acesse meu repositório público no 
+        <a href="https://github.com/daniisalgado" target="_blank" rel="external">GitHub</a>
+    </li>
+    
+    <li>
+        Conecte-se comigo no 
+        <a href="https://www.linkedin.com/in/daniela-salgado-5653b618a" target="_blank" rel="external">LinkedIn</a>
+    </li>
+    
+    <li>
+        Inscreva-se no meu canal do 
+        <a href="https://youtube.com/@sysdanii?si=lOoea6B3_njA0CXO" target="_blank" rel="external">YouTube</a>
+    </li>
+</ul>
+
+<hr>
+
+<h3>2. Links Internos</h3>
+<p>São links que navegam entre as páginas do <strong>seu próprio site</strong> (ex: ir da Home para a página de Contato).</p>
+<p>Aqui, geralmente <strong>não</strong> usamos o <em>target blank</em>. A navegação deve fluir na mesma janela, como andar pelos cômodos da mesma casa.</p>
+
+<p>
+    <a href="index.html" rel="prev">🏠 Voltar para a Home</a> | 
+    <a href="portfolio.html" rel="next">📞 Entre em Contato</a>
+</p>
+
+<h3>Extra: Links de Download</h3>
+<p>Também são links internos, mas usados para baixar arquivos (como seu currículo).</p>
+<p>
+    <a href="livros/meu-curriculo.pdf" download="Curriculo_Daniela.pdf" type="application/pdf">
+        📄 Baixar meu Currículo (PDF)
+    </a>
+</p>
+
+<h2>O Atributo Rel (Relação)</h2>
+<p>Enquanto o <code>href</code> diz <strong>para onde</strong> o link vai, o atributo <code>rel</code> explica <strong>qual é o parentesco</strong> entre a sua página atual e a página de destino.</p>
+
+<hr>
+
+<h3>1. Links para Fora (External)</h3>
+<p><strong><code>rel="external"</code></strong></p>
+<p>Este valor avisa aos robôs de busca: <em>"Atenção, este link leva para um domínio (site) diferente do meu."</em></p>
+<p>Semanticamente, ele reforça que você está citando uma fonte de terceiros.</p>
+
+<p>
+    Veja meu perfil no 
+    <a href="https://github.com/daniisalgado" rel="external" target="_blank">GitHub</a>.
+</p>
+
+<hr>
+
+<h3>2. Navegação em Série (Next e Prev)</h3>
+<p>Esses dois funcionam como as páginas de um livro. Eles são essenciais quando você tem um tutorial longo ou uma lista de produtos dividida em várias páginas.</p>
+
+<h3><code>rel="prev"</code> (Previous/Anterior)</h3>
+<p>Indica que este link leva para a parte anterior do conteúdo.</p>
+
+<h3><code>rel="next"</code> (Next/Próximo)</h3>
+<p>Indica que este link leva para a continuação lógica do conteúdo.</p>
+
+<div style="background-color: #f0f0f0; padding: 15px; border-radius: 8px; text-align: center;">
+    <p><strong>Aula 2: Configurando o Ambiente</strong></p>
+    
+    <a href="aula1.html" rel="prev">⬅ Voltar para Aula 1</a>
+    | 
+    <a href="aula3.html" rel="next">Ir para Aula 3 ➡</a>
+</div>
+
+<hr>
+
+<h3>Por que isso é importante?</h3>
+<p>Imagine que você dividiu um artigo em 3 partes. Se você não usar <code>next</code> e <code>prev</code>, o Google pode achar que são 3 artigos diferentes repetindo o mesmo assunto. Com esses atributos, ele entende que é <strong>uma única história dividida em capítulos</strong>.</p>
+
+<h2>Dominando Links e Caminhos</h2>
+
+<h3>1. O Atributo Rel (Relação)</h3>
+<p>Além dos atributos que já vimos, existem outros valores importantes para SEO (Otimização) e estrutura:</p>
+
+<ul>
+    <li>
+        <strong>rel="external"</strong><br>
+        Avisa que o link aponta para um site de outro domínio (fora da sua "casa").
+    </li>
+    
+    <li>
+        <strong>rel="next" e rel="prev"</strong><br>
+        Usados em paginação (Parte 1, Parte 2).<br>
+        <em>Atenção: O termo correto no código é <code>prev</code> (abreviado), nunca escreva "previous".</em>
+    </li>
+    
+    <li>
+        <strong>rel="nofollow"</strong><br>
+        Diz ao Google: "Não passe minha autoridade para este site". Usado em links pagos, publicidade ou comentários de blogs.
+    </li>
+    
+    <li>
+        <strong>rel="canonical" (O conceito de "Self")</strong><br>
+        Embora raramente usado em links de texto (<code>&lt;a&gt;</code>), o conceito de apontar para si mesmo é feito na "cabeça" do site (HEAD) usando a tag <code>&lt;link rel="canonical"&gt;</code>. Isso diz ao Google: "Esta é a versão original e oficial desta página", evitando punição por conteúdo duplicado.
+    </li>
+</ul>
+
+<hr>
+
+<h3>2. Navegando entre Pastas (Caminhos Relativos)</h3>
+<p>Ao criar links, precisamos dizer ao computador onde está o arquivo. Imagine que você está dentro de uma pasta no seu PC:</p>
+
+<h3>O Arquivo Simples</h3>
+<p><code>href="index.html"</code></p>
+<p>O computador procura o arquivo solto, <strong>exatamente na mesma pasta</strong> onde você está agora.</p>
+
+<h4>O Comando "Aqui Mesmo" ( ./ )</h4>
+<p><code>href="./index.html"</code></p>
+<p>O ponto e barra (<code>./</code>) significam explicitamente: "Neste diretório atual".<br>
+<em>Na prática, funciona igual ao exemplo anterior, mas é uma forma mais formal de escrever.</em></p>
+
+<h3>O Comando "Voltar uma Pasta" ( ../ )</h3>
+<p><code>href="../index.html"</code></p>
+<p>Os dois pontos e barra (<code>../</code>) significam: "Saia desta pasta e volte um nível".</p>
+
+<div style="background-color: #f0f8ff; padding: 15px; border-radius: 8px; border-left: 5px solid #2196F3;">
+    <p><strong>Exemplo Visual do "../":</strong></p>
+    <p>Imagine que você está na pasta <em>"Imagens"</em> e quer linkar para a <em>"Home"</em> que está fora dela.</p>
+    <p>Você usa <code>../index.html</code> para "sair" da pasta Imagens e encontrar o arquivo.</p>
+</div>
+
+<h2>Links para Download</h2>
+<p>Diferente dos links comuns que abrem uma página, o link de download força o navegador a salvar o arquivo no computador do usuário.</p>
+
+<hr>
+
+<h3>Os 3 Atributos Essenciais</h3>
+<p>Para criar um botão de download profissional, precisamos de três informações no código:</p>
+
+<ul>
+    <li><strong>href:</strong> Onde o arquivo está guardado.</li>
+    <li><strong>download:</strong> A ordem para "Baixar" (e opcionalmente, o novo nome do arquivo).</li>
+    <li><strong>type:</strong> O tipo técnico do arquivo (MIME Type).</li>
+</ul>
+
+<h2>O Que é a IANA.org?</h2>
+<p>Você não vai "entrar" na IANA para criar código, mas você segue as regras dela o tempo todo. A <strong>IANA</strong> (<em>Internet Assigned Numbers Authority</em>) é a organização mundial responsável por padronizar os "endereços" e os "nomes" da internet.</p>
+
+<p>Pense nela como o <strong>Cartório Oficial da Web</strong>. Sem ela, um navegador Chrome não saberia conversar com um servidor Firefox, pois cada um falaria uma língua diferente.</p>
+
+<hr>
+
+<h3>O "RG" dos Arquivos (MIME Types)</h3>
+<p>No contexto do HTML (links de download, imagens, vídeos), usamos a IANA para consultar os <strong>MIME Types</strong> (ou Media Types).</p>
+
+<p>O atributo <code>type="..."</code> que colocamos no link não pode ser inventado. Ele deve seguir a lista oficial da IANA. É um código de duas partes que diz ao navegador exatamente o que é aquele arquivo:</p>
+
+<div style="background-color: #f4f4f4; padding: 15px; border-radius: 8px; font-family: monospace;">
+    <strong>categoria / tipo-específico</strong>
+</div>
+
+<h4>Exemplos Oficiais da Lista IANA:</h4>
+<ul>
+    <li><strong>text/html</strong>:
+
+
+<p><strong>Exemplos comuns da IANA:</strong></p>
+<ul>
+    <li>Arquivo PDF: <code>type="application/pdf"</code></li>
+    <li>Arquivo ZIP: <code>type="application/zip"</code></li>
+    <li>Imagem JPG: <code>type="image/jpeg"</code></li>
+</ul>
+
+<hr>
+
+<h4>Exemplo Prático (ZIP)</h4>
+<p>Veja como ficaria o código para baixar um arquivo compactado:</p>
+
+<div style="background-color: #ABA1C6; padding: 20px; border-radius: 8px; border-left: 5px solid #2196F3;">
+    <p><strong>Código:</strong></p>
+    <code>
+        &lt;a href="pastas/projeto.zip" download="meu_projeto_final.zip" type="application/zip"&gt;
+        <br>
+        &nbsp;&nbsp; 📦 Baixar Projeto Completo
+        <br>
+        &lt;/a&gt;
+    </code>
+
+    <br><br>
+
+    <p><strong>O que acontece aqui?</strong></p>
+    <ol>
+        <li>O navegador busca o arquivo em <em>projeto.zip</em>.</li>
+        <li>Ele entende que é um arquivo compactado (graças ao <em>type</em>).</li>
+        <li>Ele salva no computador do usuário com o nome <em>meu_projeto_final.zip</em> (graças ao atributo <em>download</em>).</li>
+    </ol>
+</div>
+
+<h2>Imagens Dinâmicas (&lt;picture&gt;)</h2>
+
+<p>A tag <code>&lt;picture&gt;</code> permite entregar a imagem perfeita para cada tamanho de tela. Não é apenas esticar ou encolher a foto (o CSS faz isso), mas sim <strong>carregar arquivos diferentes</strong> para economizar dados do usuário.</p>
+
+<div style="background-color: #E8D1A7; border-left: 5px solid #84592B; padding: 15px; margin: 20px 0;">
+    <h3>💡 O Impacto na Performance</h3>
+    <p>Uma imagem ajustada corretamente melhora a experiência do usuário (o site carrega rápido no celular) e diminui a <strong>Taxa de Rejeição</strong> (o usuário não desiste de esperar).</p>
+</div>
+
+<p><strong>Teste agora:</strong> Redimensione a janela do seu navegador e veja a imagem "trocar" de arquivo automaticamente.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    
+    <img src="imagens/foto-g.png" alt="Imagem Flexível">
+</picture>
+
+   <h2>Sintonizando: Reproduzindo Áudio</h2>
+
+<p>Adicionar som ao site é incrível, mas exige responsabilidade. Antes do play, confira estas regras de ouro:</p>
+
+<div style="background-color: #fff3cd; border: 1px solid #ffeeba; padding: 15px; border-radius: 5px; color: #856404;">
+    <h3>⚠ Cuidados Essenciais</h3>
+    <ul>
+        <li><strong>Direitos Autorais:</strong> Nunca use músicas famosas sem permissão. No <em>YouTube Studio</em>, busque pela "Biblioteca de Áudio" e filtre por "Atribuição não necessária" para achar sons gratuitos e legais.</li>
+        <li><strong>Peso do Arquivo:</strong> Áudios pesados consomem os dados do usuário. Prefira arquivos compactados (MP3 ou OGG) em vez de arquivos brutos (WAV).</li>
+    </ul>
+</div>
+
+<hr>
+
+<h3>1. Os Formatos de Arquivo</h3>
+<p>Por que usamos extensões diferentes? Cada uma tem um propósito:</p>
+
+<ul>
+    <li><strong>MP3 (MPEG-3):</strong> O padrão universal. É leve e toca em todos os navegadores e dispositivos. <em>(Use sempre como opção principal).</em></li>
+    
+    <li><strong>WAV (Waveform):</strong> Qualidade de estúdio, sem compressão. O áudio é perfeito, mas o arquivo é <strong>gigante</strong>. <em>(Evite usar na web, a menos que seja um site para audiófilos).</em></li>
+    
+    <li><strong>OGG (Ogg Vorbis):</strong> Formato livre e gratuito (Open Source). Geralmente tem qualidade melhor que o MP3 com o mesmo tamanho, mas não toca no navegador Safari (Apple) em versões antigas.</li>
+</ul>
+
+<hr>
+
+<h3>2. O Player Completo</h3>
+<p>Aqui está o código profissional que garante que o áudio toque em qualquer lugar:</p>
+
+<audio preload="metadata" controls loop>
+    <source src="midia/danicast-14.mp3" type="audio/mpeg">
+    
+    <source src="midia/danicast-14.wav" type="audio/wav">
+    
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. 
+       <a href="midia/danicast-14.mp3" download>Clique aqui para baixar o MP3</a>.
+    </p>
+</audio>
+
+<h2>Configurando o Player (&lt;audio&gt;)</h2>
+<p>Não basta apenas colocar o arquivo de som; precisamos dizer ao navegador como ele deve ser entregue ao usuário. Para isso, usamos atributos especiais dentro da tag:</p>
+
+<hr>
+
+<h3>1. Controls (O Controle Remoto)</h3>
+<p><strong>O que faz:</strong> Faz aparecer os botões de Play, Pause, Volume e a barra de progresso.</p>
+<p><strong>Por que usar?</strong> Sem este atributo, o áudio é carregado "invisível" na página. A menos que você queira um som ambiente escondido (o que geralmente irrita o usuário), o <code>controls</code> é obrigatório para que a pessoa possa interagir.</p>
+
+<hr>
+
+<h3>2. Loop (O Ciclo Infinito)</h3>
+<p><strong>O que faz:</strong> Faz o áudio reiniciar automaticamente assim que termina.</p>
+<p><strong>Por que usar?</strong> É perfeito para músicas de fundo curtas, sons de chuva ou ruído branco, onde você não quer que o som pare nunca.</p>
+
+<hr>
+
+<h3>3. Preload (O Carregamento Inteligente)</h3>
+<p>Este é o atributo mais técnico e importante para a performance do seu site. Ele diz ao navegador <strong>o quanto</strong> do arquivo ele deve baixar antes mesmo do usuário clicar no Play.</p>
+
+<p>O <code>preload</code> aceita três ordens diferentes:</p>
+
+<h4>A. <code>preload="metadata"</code> (O Recomendado)</h4>
+<p>O navegador baixa apenas as "informações básicas" do arquivo (duração total, nome, artista). Ele <strong>não</strong> baixa o som em si.</p>
+<ul>
+    <li><strong>Vantagem:</strong> O site carrega muito rápido e não gasta a internet do usuário à toa. O áudio só começa a baixar quando ele clica no Play.</li>
+</ul>
+
+<h4>B. <code>preload="auto"</code></h4>
+<p>O navegador tenta baixar o arquivo de áudio inteiro assim que a página abre.</p>
+<ul>
+    <li><strong>Risco:</strong> Se o usuário entrar na página e sair sem ouvir nada, você gastou a internet dele (dados móveis) e sobrecarregou o servidor sem necessidade.</li>
+</ul>
+
+<h4>C. <code>preload="none"</code></h4>
+<p>O navegador ignora o arquivo totalmente. Não sabe nem a duração.</p>
+<ul>
+    <li><strong>Uso:</strong> Para economizar o máximo possível, mas o player pode parecer "travado" ou demorar para mostrar o tempo total da música.</li>
+</ul>
+
+<h2>Luz, Câmera, Ação: Vídeos na Web</h2>
+
+<h3>1. Hospedagem Local (Direto do Servidor)</h3>
+<p>Aqui o vídeo mora dentro da pasta do seu site. Você tem controle total, mas consome a banda do seu servidor.</p>
+
+<h4>Cuidados com Peso e Qualidade</h4>
+<div style="background-color: #F5C74D; color: #8894B7; padding: 20px; border: 5px solid #DDC5A9;">
+    <p>Vídeos pesados deixam o site lento. Recomendações:</p>
+</div>
+
+<ul>
+    <li><strong>HandBrake:</strong> Ferramenta para compactar vídeos sem perder qualidade.</li>
+    <li><strong>Pexels:</strong> Banco de vídeos gratuitos.</li>
+</ul>
+
+<h3>Formatos de Arquivo</h3>
+<p>Para garantir que funcione em todos os navegadores, ofereça mais de uma opção:</p>
+<ul>
+    <li><strong>MP4:</strong> O padrão universal.</li>
+    <li><strong>WebM:</strong> Formato do Google, leve e moderno.</li>
+    <li><strong>OGV:</strong> Formato mais antigo (backup).</li>
+</ul>
+
+<h3>O Código do Player</h3>
+<p>Dica: Use o atributo <code>poster</code> para definir uma imagem de capa.</p>
+
+<video width="360" poster="capa-video.jpg" controls loop>
+    <source src="midia/meu-video.mp4" type="video/mp4">
+    
+    <source src="midia/meu-video.webm" type="video/webm">
+    
+    <source src="midia/meu-video.ogv" type="video/ogg">
+    
+    <p>Seu navegador não suporta vídeo HTML5. <a href="midia/meu-video.mp4">Baixe o vídeo aqui</a>.</p>
+</video>
+
+<hr>
+
+<h2>2. Hospedagem Externa</h2>
+<p>Ideal para economizar espaço e ganhar visibilidade.</p>
+
+<h3>YouTube</h3>
+<p>Vantagem: Melhora o SEO (buscas no Google).</p>
+
+<iframe width="360" height="315"
+    src="https://www.youtube.com/embed/3hng-hmSv2Y?si=o4Tyzj3EIb9GtqpZ"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+   </iframe>
+
+<h3>Vimeo</h3>
+<p>Vantagem: Player mais limpo e foco artístico. Desvantagem: Limites de upload na conta grátis.</p>
+
+<iframe src="https://player.vimeo.com/video/197093965?color=ff9933&portrait=0" 
+    width="360" height="315" 
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+   <h1>Os Detalhes e o Vimeo</h1>
+
+<h2>1. As Pequenas Coisas (Atributos do Vídeo)</h2>
+<p>No código <code>&lt;video&gt;</code>, cada palavra extra que colocamos funciona como uma instrução específica para o navegador. Vamos decifrar o que cada uma faz:</p>
+
+<div style="background-color: #6B212C; color: #8EA1AE; padding: 20px; border: 5px solid #DCE0EB;">
+<ul>
+    <li>
+        <strong>poster="imagem.jpg"</strong><br>
+        É a "capa" do vídeo. Sem isso, o player fica preto ou mostra o primeiro frame (que muitas vezes é uma tela escura) até o usuário dar play. O poster garante que o vídeo pareça bonito mesmo parado.
+    </li>
+
+    <li>
+        <strong>controls</strong><br>
+        É o "controle remoto". Ele faz aparecer a barra de tempo, o volume e o botão de tela cheia. Se você esquecer de colocar isso, o vídeo fica invisível e intocável.
+    </li>
+
+    <li>
+        <strong>width="500"</strong><br>
+        Define a largura do player na tela. O navegador calcula a altura automaticamente para não distorcer a imagem.
+    </li>
+
+    <li>
+        <strong>loop</strong><br>
+        Faz o vídeo recomeçar automaticamente quando termina. Ótimo para vídeos curtos de paisagem ou texturas, mas pode irritar em vídeos longos com fala.
+    </li>
+
+    <li>
+        <strong>autoplay</strong> (Cuidado!)<br>
+        Tenta iniciar o vídeo sozinho. <br>
+        <em>Regra Secreta:</em> A maioria dos navegadores bloqueia o autoplay se o vídeo tiver som. Para funcionar, você geralmente precisa adicionar o atributo <code>muted</code> (mudo) junto.
+    </li>
+</ul>
+</div>
+
+<hr>
+
+<h2>2. Entendendo o Vimeo</h2>
+<p>Se o YouTube é a "TV Aberta" (muita gente, muita propaganda, algoritmo frenético), o Vimeo é o "Cinema Cult" ou a "Galeria de Arte".</p>
+
+<h3>Por que escolher o Vimeo?</h3>
+<p>Ele é a plataforma favorita de cineastas, designers e agências de publicidade por três motivos:</p>
+
+<ol>
+    <li><strong>A Estética (O Player Limpo):</strong> O player do Vimeo é minimalista e elegante. Ele não tem aquele monte de botões e propagandas piscando na tela como o YouTube.</li>
+    
+    <li><strong>A Qualidade de Imagem:</strong> A compressão de vídeo do Vimeo é menos agressiva. As cores ficam mais fiéis e a imagem menos "pixelada".</li>
+    
+    <li><strong>Sem Distrações:</strong> Ao final do vídeo, ele não tenta empurrar vídeos de gatinhos ou fofocas para o seu usuário. Ele mantém o foco no seu conteúdo.</li>
+</ol>
+
+<h3>Os "Códigos" na URL do Vimeo</h3>
+<p>No seu exemplo, o link tinha algo especial: <code>?color=ff9933&portrait=0</code>. O Vimeo permite personalizar o player direto pelo link:</p>
+
+<ul>
+    <li><strong>color=ff9933:</strong> Você está dizendo: "Quero que os botões do player sejam laranjas (código da cor)". Isso permite deixar o vídeo com a cor da sua marca.</li>
+    <li><strong>portrait=0:</strong> Remove a foto do perfil do dono do canal, deixando o visual mais limpo.</li>
+</ul>
+
+<h3>O Lado "Ruim" (Limitações)</h3>
+<p>Diferente do YouTube, que aceita tudo de graça, o Vimeo tem um limite rigoroso para contas gratuitas (geralmente 500MB por semana). Se você produz muito conteúdo, precisará pagar uma assinatura (Plano Pro ou Plus).</p>
+
+
+
+</body>
+  
+  
+</html>
